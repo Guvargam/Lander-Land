@@ -420,6 +420,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 382582240352564814, guid: 3797bdcaead1c014a9ce471b1923ab4d, type: 3}
+      propertyPath: m_Constraints
+      value: 56
+      objectReference: {fileID: 0}
     - target: {fileID: 5677223185426103123, guid: 3797bdcaead1c014a9ce471b1923ab4d, type: 3}
       propertyPath: m_Name
       value: Rocket
@@ -446,15 +450,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677223185426103151, guid: 3797bdcaead1c014a9ce471b1923ab4d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5677223185426103151, guid: 3797bdcaead1c014a9ce471b1923ab4d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000014901161
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5677223185426103151, guid: 3797bdcaead1c014a9ce471b1923ab4d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5677223185426103151, guid: 3797bdcaead1c014a9ce471b1923ab4d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
