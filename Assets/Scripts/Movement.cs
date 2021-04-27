@@ -36,11 +36,18 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.forward * _rotationThrust * Time.deltaTime);
+            ApplyRotation(Vector3.forward);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.back * _rotationThrust * Time.deltaTime);
+            ApplyRotation(Vector3.back);
         }
+    }
+
+    void ApplyRotation(Vector3 rotationVector)
+    {
+        _rigidbodyRocket.freezeRotation = true;
+        transform.Rotate(rotationVector * _rotationThrust * Time.deltaTime);
+        _rigidbodyRocket.freezeRotation = false;
     }
 }
