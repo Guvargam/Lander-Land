@@ -14,6 +14,9 @@ public class CollisionHandler : MonoBehaviour
             case "Fuel":
                 Debug.Log("You hit Fuel object");
                 break;
+            case "Finish":
+                Debug.Log("You finish the level! ");
+                break;
             default:
                 Debug.Log("YOU DİED!");
                 break;
