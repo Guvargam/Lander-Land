@@ -19,13 +19,14 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("You finish the level! ");
                 break;
             default:
-                LoadLevelAgain(0);
+                LoadLevelAgain();
                 break;
         }
     }
 
-    void LoadLevelAgain(int sceneIndex)
+    void LoadLevelAgain()
     {
-        SceneManager.LoadScene(sceneIndex);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
