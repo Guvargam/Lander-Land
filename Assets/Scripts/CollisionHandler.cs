@@ -1,6 +1,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -18,8 +19,13 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("You finish the level! ");
                 break;
             default:
-                Debug.Log("YOU DİED!");
+                LoadLevelAgain(0);
                 break;
         }
+    }
+
+    void LoadLevelAgain(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
     }
 }
