@@ -12,9 +12,6 @@ public class CollisionHandler : MonoBehaviour
             case "Friendly":
                 Debug.Log("You hit Friendly object");
                 break;
-            case "Fuel":
-                Debug.Log("You hit Fuel object");
-                break;
             case "Finish":
                 Debug.Log("You finish the level! ");
                 break;
