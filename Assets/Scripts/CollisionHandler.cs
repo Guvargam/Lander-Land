@@ -13,10 +13,10 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("You hit Friendly object");
                 break;
             case "Finish":
-                LoadNextLevel();
+                Invoke("LoadNextLevel",2f);
                 break;
             default:
-                LoadLevelAgain();
+                Invoke("LoadLevelAgain", 1f);
                 break;
         }
     }
