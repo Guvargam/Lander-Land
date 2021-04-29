@@ -13,7 +13,7 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("You hit Friendly object");
                 break;
             case "Finish":
-                Debug.Log("You finish the level! ");
+                LoadNextLevel();
                 break;
             default:
                 LoadLevelAgain();
@@ -25,5 +25,19 @@ public class CollisionHandler : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    void LoadNextLevel()
+    {
+        int currrentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (currrentSceneIndex == 0 )
+        {
+            SceneManager.LoadScene(currrentSceneIndex + 1);    
+        }
+        else
+        {
+            SceneManager.LoadScene(currrentSceneIndex);
+        }
+        
     }
 }
